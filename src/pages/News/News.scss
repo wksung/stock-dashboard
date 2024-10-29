@@ -1,0 +1,24 @@
+#news{
+    .page__content-search{
+        display: flex;
+        align-items: center;
+
+        @media(max-width: 991px){
+            flex-direction: column;
+
+            .page__content-search-date{
+                width: 100%;
+                margin: 0 !important;
+            }
+        }
+    }
+    .page__content-news{
+        display: flex;
+        flex-wrap: wrap;
+
+        .page__content-news-length{
+            width: 100%;
+            font-style: italic;
+        }
+    }
+}

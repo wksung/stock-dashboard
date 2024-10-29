@@ -1,0 +1,30 @@
+.newsCard[data-type="news"]{
+    .upper{
+        display: flex;
+        align-items: flex-start;
+
+        .upper-placeholder{
+            min-width: 80px;
+            height: 40px;
+            background: rgba(0, 0, 0, 0.12);
+        }
+        
+        img{
+            width: 80px;
+        }
+    }
+
+    .lower-text__summary{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    .lower-text__rm{
+        color: black;
+        display: block;
+    }
+}

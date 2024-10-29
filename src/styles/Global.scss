@@ -1,0 +1,13 @@
+#layout{
+    .page{
+        width: 100%;
+        overflow: auto;
+
+        @media(max-width: 991px){
+            max-width: fit-content;
+            margin: 0;
+            margin-top: 16px;
+            width: calc(100% - 64px);
+        }
+    }
+}

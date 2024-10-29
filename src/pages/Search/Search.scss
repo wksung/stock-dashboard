@@ -1,0 +1,97 @@
+#search{
+    .search__input{
+        display: flex;
+        align-items: center;
+
+        @media(max-width: 991px){
+            flex-direction: column;
+        }
+    }
+    
+    .search__output{
+        .search__output-profile{
+            display: flex;
+
+            img{
+                width: 120px;
+                height: 120px;
+            }
+            p{
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+        .search__output-quote{
+            display: flex;
+            align-items: center;
+
+            @media(max-width: 991px){
+                overflow: auto;
+
+                p{
+                    white-space: pre;
+                }
+            }
+
+            p{
+                &:last-child{
+                    margin-right: 0;
+                }
+
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+        .search__output-trends{
+            display: flex;
+            justify-content: space-between;
+
+            @media(max-width: 991px){
+                overflow: auto;
+            }
+            
+            div[data-type="trends"]{
+                p{
+                    &.sb{
+                        color: rgb(23, 111, 55);
+                    }
+                    &.b{
+                        color: #249108;
+                    }
+                    &.h{
+                        color: rgb(185, 139, 29);
+                    }
+                    &.s{
+                        color: #c40000;
+                    }
+                    &.ss{
+                        color: rgb(129, 49, 49);
+                    }
+
+                    span{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .search__output-news{
+            .t{
+                font-weight: bold;
+            }
+
+            .search__output-news--list{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+
+        a.rm{
+            color: black;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
