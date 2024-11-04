@@ -1,6 +1,9 @@
 // MUI
 import { useTheme, Button, Modal, TextField } from '@mui/material';
 
+// TYPES
+import { MyStock } from '../../types/mystock';
+
 // SCSS
 import './StockModal.scss';
 
@@ -22,8 +25,8 @@ const StockModal = ({
     stock: string;
     amount: number;
     open: boolean;
-    setMyStocks?: Function;
-    closeModal: Function;
+    setMyStocks?: (stocks: Array<MyStock>) => void;
+    closeModal: () => void;
     type?: string;
     currentStockPrice?: number;
     currentStockQty?: number;
