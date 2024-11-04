@@ -17,6 +17,9 @@ Material UI, SCSS
 #### Testing:
 React Testing Library, Jest
 
+### Tools:
+Prettier, ESLint
+
 #### DevOps:
 Github (Actions, Projects), Netlify
 
@@ -63,9 +66,9 @@ The tests are made using React Testing Library (RTL) with Jest. There are test s
 
 ## CI/CD Pipeline
 #### Continuous Integration: 
-Whenever code is pushed into the main branch, it runs all the tests. This then runs the github workflow which checks for all the tests.
+Whenever code is pushed into the main branch, it first runs the ESLint to check for linting, then it runs all the tests using GitHub workflow.
 
-If the tests all pass, it provides an update within the branch that ticks off the git commit.
+If both the linting & tests pass, it provides an update within the branch that ticks off the git commit.
 
 #### Continuous Delivery/Deployment:
 Netlify is used to deploy the application, and whenever a commit is pushed into the main branch, Netlify deploys the changes to the site. Ensuring manual QA is done, automatic deployment is locked and each deployment has a preview. 
