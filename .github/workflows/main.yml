@@ -27,7 +27,7 @@ jobs:
       - name: Run ESLint
         run: npm run lint
 
-      - name: Run tests
+      - name: Run Tests
         env:
           REACT_APP_API_KEY: ${{ secrets.REACT_APP_API_KEY }}
           REACT_APP_API_URL: ${{ secrets.REACT_APP_API_URL }}
