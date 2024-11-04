@@ -1,13 +1,12 @@
-import { totalBoughtPrice } from "./totalBoughtPrice";
+import { totalBoughtPrice } from './totalBoughtPrice';
 
 const MockMyStocks = [
-    { "stock": "NVDA", "price": 100, "quantity": "60" }, 
-    { "stock": "AAPL", "price": 100, "quantity": "10" }
+    { stock: 'NVDA', price: 100, quantity: '60' },
+    { stock: 'AAPL', price: 100, quantity: '10' },
 ];
 
-describe("totalBoughtPrice", () => {
-
-    it("should show total bought price of your stocks", () => {
+describe('totalBoughtPrice', () => {
+    it('should show total bought price of your stocks', () => {
         const totalPrice = totalBoughtPrice(MockMyStocks);
         expect(totalPrice).toBe(7000);
     });
@@ -16,5 +15,4 @@ describe("totalBoughtPrice", () => {
         const totalPrice = totalBoughtPrice([]);
         expect(totalPrice).toBe(0);
     });
-
 });

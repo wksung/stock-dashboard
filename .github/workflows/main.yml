@@ -24,6 +24,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Run ESLint
+        run: npm run lint
+
       - name: Run tests
         env:
           REACT_APP_API_KEY: ${{ secrets.REACT_APP_API_KEY }}
