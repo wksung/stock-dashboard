@@ -17,7 +17,7 @@ Material UI, SCSS
 #### Testing:
 React Testing Library, Jest
 
-### Tools:
+#### Tools:
 Prettier, ESLint
 
 #### DevOps:
